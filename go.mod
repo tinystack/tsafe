@@ -1,4 +1,4 @@
-module github.com/tinystack/safe
+module github.com/tinystack/tsafe
 
 go 1.18
 
