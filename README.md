@@ -1,7 +1,7 @@
-# safe
+# tsafe
 Go goroutine safety Package
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/tinystack/tsafe)](https://goreportcard.com/report/github.com/    tinystack/tsafe)
+[![Go Report Card](https://goreportcard.com/badge/github.com/tinystack/tsafe)](https://goreportcard.com/report/github.com/tinystack/tsafe)
 ![Go Version](https://img.shields.io/badge/go%20version-%3E=1.18-61CFDD.svg?style=flat-square)
 [![PkgGoDev](https://pkg.go.dev/badge/mod/github.com/tinystack/tsafe)](https://pkg.go.dev/mod/github.com/tinystack/tsafe)
 
