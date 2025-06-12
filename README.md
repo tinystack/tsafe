@@ -1,8 +1,8 @@
-# TSafe - Panic-Safe Goroutine Launcher
+# tsafe - Panic-Safe Goroutine Launcher
 
 [English](README.md) | [中文](README_CN.md)
 
-TSafe is a lightweight Go library that makes goroutines panic-proof. Start goroutines safely with automatic panic recovery and customizable error handling.
+**tsafe** is a lightweight Go library that makes goroutines panic-proof. Start goroutines safely with automatic panic recovery and customizable error handling.
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/tinystack/tsafe)](https://goreportcard.com/report/github.com/tinystack/tsafe)
 ![Go Version](https://img.shields.io/badge/go%20version-%3E=1.18-61CFDD.svg?style=flat-square)

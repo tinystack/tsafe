@@ -1,8 +1,8 @@
-# TSafe - 防崩溃 Goroutine 启动器
+# tsafe - 防崩溃 Goroutine 启动器
 
 [English](README.md) | [中文](README_CN.md)
 
-TSafe 是一个轻量级 Go 语言库，让 goroutine 远离 panic 崩溃。安全启动 goroutine，自动恢复 panic 并支持自定义错误处理。
+**tsafe** 是一个轻量级 Go 语言库，让 goroutine 远离 panic 崩溃。安全启动 goroutine，自动恢复 panic 并支持自定义错误处理。
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/tinystack/tsafe)](https://goreportcard.com/report/github.com/tinystack/tsafe)
 ![Go Version](https://img.shields.io/badge/go%20version-%3E=1.18-61CFDD.svg?style=flat-square)
