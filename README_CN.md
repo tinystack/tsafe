@@ -1,8 +1,8 @@
-# TSafe - 线程安全的 Goroutine 执行库
+# TSafe - 防崩溃 Goroutine 启动器
 
 [English](README.md) | [中文](README_CN.md)
 
-TSafe 是一个简单而强大的 Go 语言库，提供安全、可靠的 goroutine 执行工具，具有全面的 panic 恢复机制。它的设计目标是让 Go 语言的并发编程更加安全可靠。
+TSafe 是一个轻量级 Go 语言库，让 goroutine 远离 panic 崩溃。安全启动 goroutine，自动恢复 panic 并支持自定义错误处理。
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/tinystack/tsafe)](https://goreportcard.com/report/github.com/tinystack/tsafe)
 ![Go Version](https://img.shields.io/badge/go%20version-%3E=1.18-61CFDD.svg?style=flat-square)
@@ -10,11 +10,11 @@ TSafe 是一个简单而强大的 Go 语言库，提供安全、可靠的 gorout
 
 ## 特性
 
-- **安全的 Goroutine 执行**: 自动捕获和处理 goroutine 中的 panic
-- **自定义错误日志**: 可插拔的日志接口，支持自定义错误处理
+- **防崩溃 Goroutine**: 自动捕获和处理 goroutine 中的 panic
+- **自定义错误处理**: 可插拔日志接口和自定义恢复函数
 - **线程安全**: 所有操作都是线程安全的，适合并发使用
-- **零依赖**: 最小化外部依赖（仅测试时使用 testify）
-- **轻量级**: 简单专注的 API，开销最小
+- **零依赖**: 无外部依赖（仅测试时使用 testify）
+- **极低开销**: 简单 API，每个 goroutine 仅约 220ns 开销
 
 ## 安装
 
@@ -142,9 +142,9 @@ go test -bench=. -benchmem
 
 ## 性能
 
-TSafe 专为高性能设计，开销最小：
+TSafe 专为高性能设计，开销极低：
 
-- Goroutine 创建开销：每个 goroutine 约 215ns
+- Goroutine 创建开销：每个 goroutine 约 220ns
 - 内存分配：每个 goroutine 24B
 
 ## 贡献

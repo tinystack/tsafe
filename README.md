@@ -1,8 +1,8 @@
-# TSafe - Thread-Safe Goroutine Execution Library
+# TSafe - Panic-Safe Goroutine Launcher
 
 [English](README.md) | [中文](README_CN.md)
 
-TSafe is a simple yet robust Go library that provides utilities for safe goroutine execution with comprehensive panic recovery. It's designed to make concurrent programming in Go safer and more reliable.
+TSafe is a lightweight Go library that makes goroutines panic-proof. Start goroutines safely with automatic panic recovery and customizable error handling.
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/tinystack/tsafe)](https://goreportcard.com/report/github.com/tinystack/tsafe)
 ![Go Version](https://img.shields.io/badge/go%20version-%3E=1.18-61CFDD.svg?style=flat-square)
@@ -10,11 +10,11 @@ TSafe is a simple yet robust Go library that provides utilities for safe gorouti
 
 ## Features
 
-- **Safe Goroutine Execution**: Automatically catch and handle panics in goroutines
-- **Custom Error Logging**: Pluggable logger interface for custom error handling
+- **Panic-Proof Goroutines**: Automatically catch and handle panics in goroutines
+- **Custom Error Handling**: Pluggable logger interface and custom recovery functions
 - **Thread-Safe**: All operations are thread-safe and suitable for concurrent use
-- **Zero Dependencies**: Minimal external dependencies (only testify for testing)
-- **Lightweight**: Simple and focused API with minimal overhead
+- **Zero Dependencies**: No external dependencies (only testify for testing)
+- **Minimal Overhead**: Simple API with ~220ns per goroutine overhead
 
 ## Installation
 
@@ -144,7 +144,7 @@ go test -bench=. -benchmem
 
 TSafe is designed for high performance with minimal overhead:
 
-- Goroutine creation overhead: ~215ns per goroutine
+- Goroutine creation overhead: ~220ns per goroutine
 - Memory allocation: 24B per goroutine
 
 ## Contributing
